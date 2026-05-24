@@ -1,0 +1,243 @@
+¨{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'helvetica',sans-serif ;
+    margin: 3;
+}
+
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.5em;}
+h3{font-size: 2em;}
+p{font-size: 1.30;}
+li{font-size: 1.25em;}
+
+
+button{
+font-size: 1.25;
+font-weight: bold;
+padding: 10px 20px;
+border-radius: 10px;
+border: 1px  solid rgba(0, 0, 0, 0.5);
+box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+color: rgb(255, 184, 28);
+background-color: rgb(108,172,228);
+}
+
+button:hover{
+    background-color:rgb(0, 191, 255) ;
+}
+
+.container{
+    max-width: 1400px;
+    margin:auto;
+}
+
+
+header{
+    background: rgb(255,255,255);
+}
+
+
+header .logo{
+    margin: 0;
+    padding: 30px 40px;
+    font-weight: bold;
+    color:  rgb(108,172,228);
+    font-size: 1.5em;
+}
+.color-acento{color: rgb(108,172,228);}
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: rgb(108, 172,228);
+}
+
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/option1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: white;
+    font-size: 5vw;
+}
+
+#hero button{
+    font-size: 2vw;
+}
+
+
+#Acerca-de-nosotros{
+    text-align: center;
+    padding: 200px 12px;
+    font-size: 1vw;
+}
+#Productos{
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+}
+#Productos .container{
+    padding: 100px 0px;
+}
+
+#Productos h2{
+    margin-top: 0;
+    font-size: 4em;
+
+}
+
+#Productos p{
+    display: none;
+}
+
+
+#Productos .carta{
+     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 950px;
+    border-radius: 30px;
+
+}
+
+.carta:first-child{
+      background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/ventana-aluminio.jpg);
+   
+}
+
+
+.carta:nth-child(2){
+      background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/Puerta-madera.jpg);
+}
+
+
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/ventana-madera.jpg);
+
+}
+
+.carta:nth-child(4){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/puerta-chapa.jpg);
+   
+
+}
+
+#Contacto .container{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: white;
+    color: rgb(30, 30, 30);
+    height: 80vh;
+
+}
+
+#Contacto h2{
+    font-size: 7vw;
+}
+
+#Contacto button{
+    font-size: 2vW;
+}
+
+footer{
+    background-color: rgb(230, 230, 230);
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100,100,100);
+
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media(min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+
+    .container{
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+
+}
