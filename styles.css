@@ -1,406 +1,419 @@
 /* RESET */
-
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 /* GENERALES */
-
-html{
+html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     font-family: 'Poppins', sans-serif;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Obliga al cuerpo a ocupar el 100% de la pantalla */
 }
 
-h1{font-size: 3.5em;}
-h2{font-size: 2.7em;}
-h3{font-size: 2em;}
-p{font-size: 1.1em;}
-li{
-    list-style: none;
+main {
+    flex: 1; /* Estira el contenido central para empujar el footer abajo */
 }
 
-button{
+h1 { font-size: 3.5em; }
+h2 { font-size: 2.7em; }
+h3 { font-size: 2em; }
+p { font-size: 1.1em; }
+li { list-style: none; }
+
+button {
     font-size: 1em;
     font-weight: bold;
     padding: 10px 20px;
     border-radius: 10px;
     border: none;
     cursor: pointer;
-
     color: white;
     background-color: rgb(108,172,228);
-
     transition: 0.3s;
 }
 
-button:hover{
+button:hover {
     background-color: rgb(0,191,255);
 }
 
-.container{
+.container {
     max-width: 1400px;
     margin: auto;
     padding: 0 20px;
 }
 
 /* HEADER */
-
-header{
+header {
     background-color: white;
     position: fixed;
     width: 100%;
     z-index: 1000;
 }
 
-header .container{
+header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
 }
 
-.logo{
+.logo {
     font-size: 1.6em;
     font-weight: bold;
     color: rgb(108,172,228);
 }
 
-header ul{
+header ul {
     display: flex;
     gap: 20px;
 }
 
-header a{
+header a {
     text-decoration: none;
     color: black;
     font-weight: bold;
 }
 
-header a:hover{
+header a:hover {
     color: rgb(108,172,228);
 }
 
 /* HERO */
-
-#hero{
+#hero {
     height: 100vh;
-
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-
     color: white;
-
-    background-image:
-        linear-gradient(
-            0deg,
-            rgba(0,0,0,0.5),
-            rgba(0,0,0,0.5)
-        ),
-        url(imagenes/option1.jpg);
-
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(imagenes/option1.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-#hero h1{
+#hero h1 {
     font-size: 5vw;
     margin-bottom: 20px;
 }
 
 /* ACERCA */
-
-#Acerca-de-nosotros{
+#Acerca-de-nosotros {
     padding: 100px 20px;
 }
 
-#Acerca-de-nosotros .container{
+#Acerca-de-nosotros .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
 }
 
-#Acerca-de-nosotros .img-container{
-
+#Acerca-de-nosotros .img-container {
     width: 100%;
     height: 700px;
-
     border-radius: 20px;
-
-    background-image:
-        linear-gradient(
-            0deg,
-            rgba(0,0,0,0.4),
-            rgba(0,0,0,0.4)
-        ),
-        url(imagenes/acerca-de.jpg);
-
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(imagenes/acerca-de.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-#Acerca-de-nosotros h2{
+#Acerca-de-nosotros h2 {
     text-align: center;
 }
 
-#Acerca-de-nosotros p{
+#Acerca-de-nosotros p {
     max-width: 900px;
     text-align: justify;
     line-height: 1.8;
 }
 
 /* PRODUCTOS */
-
-#Productos{
+#Productos {
     background-color: rgb(30,30,30);
     color: white;
     padding: 100px 20px;
     text-align: center;
 }
 
-#Productos h2{
+#Productos h2 {
     margin-bottom: 50px;
 }
 
-#Productos .aberturas{
+#Productos .aberturas {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 25px;
 }
 
-#Productos .carta{
-
+#Productos .carta {
     width: 300px;
-    min-height: 700px;
-
+    min-height: 450px; /* Reducido un poco para que sea más armónico con el botón */
     padding: 30px;
-
     border-radius: 20px;
-
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
     box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
 }
 
-#Productos h3{
-    margin-bottom: 20px;
+#Productos h3 {
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.8);
 }
 
-#Productos p{
+#Productos p {
     margin-bottom: 20px;
     line-height: 1.5;
+    font-size: 0.95em;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.8);
 }
 
 /* IMAGENES PRODUCTOS */
-
-.carta:first-child{
-    background-image:
-        linear-gradient(
-            0deg,
-            rgba(0,0,0,0.5),
-            rgba(0,0,0,0.5)
-        ),
-        url(imagenes/ventana-aluminio.jpg);
+.carta:first-child {
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(imagenes/ventana-aluminio.jpg);
 }
 
-.carta:nth-child(2){
-    background-image:
-        linear-gradient(
-            0deg,
-            rgba(0,0,0,0.5),
-            rgba(0,0,0,0.5)
-        ),
-        url(imagenes/Puerta-madera.jpg);
+.carta:nth-child(2) {
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(imagenes/Puerta-madera.jpg);
 }
 
-.carta:nth-child(3){
-    background-image:
-        linear-gradient(
-            0deg,
-            rgba(0,0,0,0.5),
-            rgba(0,0,0,0.5)
-        ),
-        url(imagenes/ventana-madera.jpg);
+.carta:nth-child(3) {
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(imagenes/ventana-madera.jpg);
 }
 
-.carta:nth-child(4){
-    background-image:
-        linear-gradient(
-            0deg,
-            rgba(0,0,0,0.5),
-            rgba(0,0,0,0.5)
-        ),
-        url(imagenes/puerta-chapa.jpg);
-
-    background-size: contain;
-    background-position: center top;
+.carta:nth-child(4) {
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(imagenes/puerta-chapa.jpg);
 }
 
 /* RESEÑAS */
-
-#Reseñas{
+#Reseñas {
     padding: 100px 20px;
     text-align: center;
 }
 
-#Reseñas h2{
+#Reseñas h2 {
     margin-bottom: 50px;
 }
 
-.reseñas-grid{
+.reseñas-grid {
     display: grid;
-
-    grid-template-columns:
-        repeat(auto-fit,minmax(250px,1fr));
-
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
 
-.reseña{
+.reseña {
     background-color: rgb(240,240,240);
     padding: 30px;
     border-radius: 20px;
-
     box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
-} */
+}
 
 /* FORMULARIO RESEÑAS */
-
-.form-reseña{
+.form-reseña {
     margin-top: 60px;
 }
 
-.form-reseña h3{
+.form-reseña h3 {
     margin-bottom: 20px;
 }
 
-.form-reseña form{
+.form-reseña form {
     max-width: 600px;
     margin: auto;
-
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
 .form-reseña input,
-.form-reseña textarea{
+.form-reseña textarea {
     padding: 15px;
     border-radius: 10px;
     border: 1px solid rgb(200,200,200);
-
     font-family: inherit;
 }
 
-.form-reseña textarea{
+.form-reseña textarea {
     min-height: 120px;
     resize: none;
 }
 
 /* CONTACTO */
-
-#Contacto{
+#Contacto {
     padding: 100px 20px;
 }
 
-#Contacto .container{
+#Contacto .container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#Contacto h2{
+#Contacto h2 {
     margin-bottom: 40px;
 }
 
-#Contacto form{
+#Contacto form {
     width: 100%;
     max-width: 600px;
-
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
 #Contacto input,
-#Contacto textarea{
+#Contacto textarea {
     padding: 15px;
     border-radius: 10px;
     border: 1px solid rgb(200,200,200);
-
     font-family: inherit;
 }
 
-#Contacto textarea{
+#Contacto textarea {
     min-height: 150px;
     resize: none;
 }
 
 /* FOOTER */
-
-footer{
+footer {
     background-color: rgb(230,230,230);
+    width: 100%;
+    margin-top: auto; /* Refuerza que se quede abajo de todo */
 }
 
-footer .container{
-    height: 100px;
-
+footer .container {
+    height: 80px;
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    justify-content: center; /* Centrado queda más prolijo, podés dejarlo en flex-end si preferís */
+    align-items: center;
 }
 
-footer p{
-    padding: 20px;
+footer p {
+    padding: 0;
     color: rgb(100,100,100);
 }
 
+/* CARRITO SECCIÓN ESTILOS */
+.carrito-bloque {
+    max-width: 800px;
+    margin: auto;
+    background-color: rgb(245,245,245);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 15px rgba(0,0,0,0.1);
+}
+
+#lista-carrito li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid rgb(210, 210, 210);
+    color: #333;
+}
+
+.carrito-inferior {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.carrito-botones {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.btn-vaciar {
+    background-color: rgb(215, 90, 90);
+}
+
+.btn-vaciar:hover {
+    background-color: rgb(190, 60, 60);
+}
+
+.btn-comprar {
+    background-color: rgb(46, 204, 113);
+}
+
+.btn-comprar:hover {
+    background-color: rgb(39, 174, 96);
+}
+
+.btn-seguir {
+    text-decoration: none;
+    background: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1em;
+    transition: 0.3s;
+}
+
+.btn-seguir:hover {
+    background: #555;
+}
+
+.btn-eliminar-item {
+    background: none !important;
+    color: rgb(215, 90, 90) !important;
+    padding: 0 5px;
+    font-size: 1.6em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-eliminar-item:hover {
+    transform: scale(1.2);
+}
+
 /* RESPONSIVE */
-
 @media(max-width: 720px){
-
-    header .container{
+    header .container {
         flex-direction: column;
         gap: 20px;
     }
-
-    header ul{
+    header ul {
         flex-direction: column;
         text-align: center;
     }
-
-    #hero h1{
+    #hero h1 {
         font-size: 10vw;
     }
-
-    #Acerca-de-nosotros .img-container{
+    #Acerca-de-nosotros .img-container {
         height: 400px;
     }
-
-    #Productos .carta{
+    #Productos .carta {
         width: 100%;
-        min-height: 600px;
+        min-height: 400px;
     }
-
-    #Contacto h2{
+    #Contacto h2 {
         font-size: 2.5em;
     }
-
+    #lista-carrito li {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
 }

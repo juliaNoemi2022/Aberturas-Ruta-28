@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Carrito - Aberturas Ruta 28</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <p class="logo">Aberturas Ruta28</p>
+            <nav>
+                <ul>
+                    <li><a href="index.html#hero">Inicio</a></li>
+                    <li><a href="index.html#Productos">Productos</a></li>
+                    <li><a href="index.html#Acerca-de-nosotros">Nosotros</a></li>
+                    <li><a href="index.html#Reseñas">Reseñas</a></li>
+                    <li><a href="index.html#Contacto">Contacto</a></li>
+                    <li><a href="carrito.html" style="color: rgb(108,172,228); font-weight: bold;">Carrito (<span id="contador-productos">0</span>)</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main style="padding-top: 140px; min-height: 75vh;">
+        <section id="Carrito-Seccion">
+            <div class="container">
+                <h2 style="margin-bottom: 30px; text-align: center; color: #333;">Tu Carrito de Compras</h2>
+                
+                <div class="carrito-bloque">
+                    <ul id="lista-carrito" style="padding: 0; margin: 0;">
+                        </ul>
+
+                    <div class="carrito-inferior">
+                        <h3>Total: $<span id="total-precio">0</span></h3>
+                        <div class="carrito-botones">
+                            <button id="vaciar-carrito" class="btn-vaciar">Vaciar Carrito</button>
+                            <button id="btn-comprar" class="btn-comprar">Comprar</button>
+                            <a href="index.html#Productos" class="btn-seguir">Seguir Comprando</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; Aberturas Ruta28</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
