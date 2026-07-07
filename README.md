@@ -13,7 +13,11 @@ Este proyecto consiste en el desarrollo del sitio web oficial para **Aberturas R
 
 A continuación se muestra un recorrido rápido por las funcionalidades del sitio web:
 
-<video src="video/muestra de video2.mp4" width="100%" controls autoplay muted loop></video>
+
+
+https://github.com/user-attachments/assets/e23dfb8a-9099-47a9-a0a4-79de06529c5d
+
+
 
 
 ### ✨ Características Principales
