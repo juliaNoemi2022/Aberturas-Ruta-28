@@ -1,69 +1,66 @@
-# 🚪 Aberturas Ruta 28 - Tienda con Carrito de Compras
+# Aberturas Ruta 28
 
-Este es un proyecto web desarrollado con tecnologías nativas (**HTML5, CSS3 y JavaScript Vanilla**) para la empresa **Aberturas Ruta 28**. La aplicación cuenta con una página principal (catálogo de productos) y una página dedicada exclusivamente a la gestión del carrito de compras, comunicadas dinámicamente a través del almacenamiento local del navegador.
-
-## 🚀 Características Principales
-
-*   **Persistencia de Datos:** Uso de `localStorage` para que los productos no se borren al recargar la página o al navegar entre secciones.
-*   **Diseño Responsive:** Adaptabilidad garantizada para celulares, tablets y computadoras de escritorio mediante CSS Media Queries.
-*   **UI Dinámica:** El contador del carrito en la barra de navegación se actualiza en tiempo real desde cualquier sección.
-*   **Layout Moderno (Sticky Footer):** Implementación de Flexbox en la estructura global para asegurar que el pie de página (`footer`) permanezca siempre en la base de la pantalla, incluso si el carrito está vacío.
+> Un sitio web dinámico, responsivo y profesional diseñado para la exhibición de productos y gestión de un carrito de compras para un negocio de aberturas de aluminio y PVC.
 
 ---
 
-## 📂 Estructura del Proyecto
+## Descripción
 
-```text
-├── index.html                   # Página de inicio y catálogo de productos
-├── carrito.html                 # Interfaz de gestión del carrito de compras
-├── styles.css                   # Estilos generales, animaciones y diseño responsive
-├── script.js                    # Lógica central del carrito (Tienda + Carrito)
-└── imagenes/                    # Directorio para los fondos y fotos de productos
-    ├── option1.jpg
-    ├── acerca-de.jpg
-    ├── ventana-aluminio.jpg
-    ├── Puerta-madera.jpg
-    ├── ventana-madera.jpg
-    └── puerta-chapa.jpg
+Este proyecto consiste en el desarrollo del sitio web oficial para **Aberturas Ruta 28**. La página tiene como objetivo principal brindar una experiencia de usuario fluida e interactiva, permitiendo a los clientes explorar el catálogo de productos, gestionar sus elecciones en tiempo real y ponerse en contacto con el negocio de forma rápida.
 
-**Desarrollo Técnico**
-1. Interfaz y Maquetación (HTML5)
-index.html: Contiene las secciones de Hero, Nosotros, Productos, Reseñas y Contacto. Cada tarjeta de producto incluye un botón con atributos personalizados (data-id, data-nombre, data-precio) esenciales para que JavaScript procese el contenido.
 
-carrito.html: Muestra una estructura limpia que renderiza dinámicamente los elementos mediante una lista inyectada desde el DOM (#lista-carrito).
+### 📸 Demostración
 
-2. Estilos y Layout (CSS3)
-El diseño visual utiliza la fuente Poppins y una paleta de colores moderna. Se destacan dos soluciones estructurales:
+A continuación se muestra un recorrido rápido por las funcionalidades del sitio web:
 
-Header Fijo: Se utilizó position: fixed para mantener la navegación siempre al alcance del usuario.
+<video src="videos/tu-video.mp4" width="100%" controls autoplay muted loop></video>
 
-Solución al "Footer Volador": Para evitar que el footer flote a mitad de pantalla cuando hay pocos productos, se aplicó un modelo de caja flexible en el cuerpo del documento:
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-main {
-    flex: 1; /* Empuja el footer hacia el fondo de la pantalla */
-}
-footer {
-    margin-top: auto;
-}
 
-**Lógica de Negocio**
-El archivo script.js unifica el comportamiento de ambas páginas controlando el estado mediante el ciclo de vida del DOM (DOMContentLoaded):
+### ✨ Características Principales
+* **Carrito de Compras Interactivo:** Permite a los usuarios seleccionar aberturas, agregarlas al carrito, visualizar el total y gestionar sus productos en tiempo real.
+* **Diseño Responsivo:** Completamente adaptado para visualizarse de forma óptima en computadoras, tablets y dispositivos móviles.
+* **Navegación Intuitiva:** Enlaces rápidos (incluyendo el acceso al inicio desde el logo principal) para facilitar la experiencia del usuario.
 
-Detección de Pantalla: El script detecta de forma inteligente en qué página se encuentra el usuario buscando la existencia del nodo #lista-carrito. Si existe, inicializa las funciones del carrito; si no, configura los escuchadores de eventos para los botones de la tienda.
+---
 
-Eventos Robustos: Se reemplazó el uso de e.target por e.currentTarget en los manejadores de clicks. Esto previene errores de captura cuando el usuario hace click en los bordes internos de los botones o en el caracter &times; (X) de eliminación.
+## 🛠️ Tecnologías Usadas
 
-Formateo de Moneda: Para una experiencia de usuario localizada, los precios se muestran utilizando .toLocaleString('es-AR'), formateando correctamente los miles y decimales según la región.
+Se utilizaron  las siguientes tecnologías:
 
-**Cómo Ejecutar el Proyecto Localmente**
-Descargá o cloná este repositorio en tu computadora.
+* **HTML5** - Para la estructuración del contenido y el marcado semántico de la web.
+* **CSS3** - Para el diseño visual, maquetación (Flexbox/Grid) y adaptabilidad (Media Queries).
+* **JavaScript** - Para la lógica del negocio, interactividad del sitio y el funcionamiento del carrito de compras.
+* **Git & GitHub** - Para el control de versiones y el alojamiento del código fuente.
 
-Asegurate de incluir las imágenes correspondientes dentro de una carpeta llamada imagenes/ para que los fondos de las tarjetas carguen correctamente.
+---
 
-Abrí el archivo index.html en cualquier navegador web moderno (Chrome, Edge, Firefox, Brave).
+## ⚙️ Requisitos Previos
 
-¡Listo! Ya podés interactuar con la tienda, añadir productos y procesar tu compra.
+Antes de comenzar, se debe  contar con las siguientes herramientas instaladas:
+
+* **Control de versiones:** [Git](https://git-scm.com/) (si utilizas Windows, se recomienda seleccionar la opción de *Git Bash* durante la instalación).
+* **Editor de código:** [Visual Studio Code](https://code.visualstudio.com/).
+* **Extensión de VS Code:** [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) (necesaria para desplegar y previsualizar el proyecto localmente en tiempo real).
+
+---
+
+## 🚀 Instalación y Ejecución
+
+Sigue estos pasos para clonar el proyecto y ejecutarlo en tu entorno local:
+
+1. **Clonar el repositorio:** Abre tu terminal (Git Bash) y ejecuta el siguiente comando:
+   ```bash
+   git clone [https://github.com/juliaNoemi2022/Aberturas-Ruta-28.git](https://github.com/juliaNoemi2022/Aberturas-Ruta-28.git)
+
+**Abrir el proyecto:** Abre la carpeta del proyecto que acabas de clonar utilizando Visual Studio Code.
+
+**Desplegar el servidor local:** * Localiza el archivo index.html en el explorador de archivos de VS Code.
+
+*Haz clic derecho sobre él y selecciona "Open with Live Server".
+
+*El proyecto se desplegará automáticamente en tu navegador predeterminado a través de un servidor local (normalmente en la dirección http://127.0.0.1:5500).
+
+
+
+**Autora**
+Julia Avalos 

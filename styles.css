@@ -45,7 +45,7 @@ button:hover {
     padding: 0 20px;
 }
 
-/* HEADER */
+
 header {
     background-color: white;
     position: fixed;
@@ -64,6 +64,11 @@ header .container {
     font-size: 1.6em;
     font-weight: bold;
     color: rgb(108,172,228);
+    text-decoration: none;
+}
+
+.logo:hover {
+    color: rgb(0, 191, 255);
 }
 
 header ul {
