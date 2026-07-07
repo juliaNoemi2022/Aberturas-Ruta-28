@@ -1,29 +1,29 @@
 
+
+
 let carrito = JSON.parse(localStorage.getItem("carrito_ruta28")) || [];
 
 document.addEventListener("DOMContentLoaded", () => {
     actualizarContador();
-    
   
     const listaCarrito = document.getElementById("lista-carrito");
     
     if (listaCarrito) {
-     
+      
         renderizarCarrito();
         configurarBotonesCarrito();
     } else {
-      
+       
         configurarBotonesTienda();
     }
 });
-
 
 function configurarBotonesTienda() {
     const botonesAgregar = document.querySelectorAll(".btn-agregar");
     
     botonesAgregar.forEach(boton => {
         boton.addEventListener("click", (e) => {
-            // currentTarget asegura capturar el botón de forma robusta
+    
             const id = e.currentTarget.getAttribute("data-id");
             const nombre = e.currentTarget.getAttribute("data-nombre");
             const precio = parseFloat(e.currentTarget.getAttribute("data-precio"));
@@ -34,7 +34,7 @@ function configurarBotonesTienda() {
 }
 
 function agregarAlCarrito(id, nombre, precio) {
-    // Comparamos forzando los tipos a String para evitar fallas
+   
     const existe = carrito.find(item => String(item.id) === String(id));
     
     if (existe) {
@@ -46,6 +46,8 @@ function agregarAlCarrito(id, nombre, precio) {
     guardarCambios();
     alert(`"${nombre}" se agregó al carrito.`);
 }
+
+
 
 
 function renderizarCarrito() {
@@ -127,7 +129,7 @@ function vaciarCarrito() {
     renderizarCarrito();
 }
 
-// --- CONTROLES GLOBALES ---
+
 function guardarCambios() {
     localStorage.setItem("carrito_ruta28", JSON.stringify(carrito));
     actualizarContador();
