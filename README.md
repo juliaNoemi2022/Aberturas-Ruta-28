@@ -13,7 +13,7 @@ Este proyecto consiste en el desarrollo del sitio web oficial para **Aberturas R
 
 A continuación se muestra un recorrido rápido por las funcionalidades del sitio web:
 
-<video src="video/Muestra de pagina.mp4" width="100%" controls autoplay muted loop></video>
+<video src="video/muestra de pagina.gif" width="100%" controls autoplay muted loop></video>
 
 
 ### ✨ Características Principales
