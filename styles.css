@@ -134,7 +134,7 @@ header a:hover {
     line-height: 1.8;
 }
 
-/* PRODUCTOS */
+
 #Productos {
     background-color: rgb(30,30,30);
     color: white;
@@ -386,11 +386,9 @@ footer p {
     transform: scale(1.2);
 }
 
-<<<<<<< HEAD
 
-=======
-/* RESPONSIVE */
->>>>>>> ce5623bd84f4193374ac57a20afa90eb192d8b8c
+
+
 @media(max-width: 720px){
     header .container {
         flex-direction: column;
