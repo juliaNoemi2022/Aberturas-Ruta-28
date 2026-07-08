@@ -54,7 +54,7 @@ Sigue estos pasos para clonar el proyecto y ejecutarlo en tu entorno local:
 
 1. **Clonar el repositorio:** Abre tu terminal (Git Bash) y ejecuta el siguiente comando:
    ```bash
-   git clone [https://github.com/juliaNoemi2022/Aberturas-Ruta-28.git](https://github.com/juliaNoemi2022/Aberturas-Ruta-28.git)
+   git clone [https://github.com/juliaNoemi2022/Aberturas-Ruta-28.git]
 
 **Abrir el proyecto:** Abre la carpeta del proyecto que acabas de clonar utilizando Visual Studio Code.
 
