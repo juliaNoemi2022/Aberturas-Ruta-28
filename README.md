@@ -21,7 +21,7 @@ https://github.com/user-attachments/assets/e23dfb8a-9099-47a9-a0a4-79de06529c5d
 
 
 ### ✨ Características Principales
-* **Carrito de Compras Interactivo:** Permite a los usuarios seleccionar aberturas, agregarlas al carrito, visualizar el total y gestionar sus productos en tiempo real.
+* **Carrito de Compras Interactivo:** Permite seleccionar aberturas, agregarlas al carrito, visualizar el total y gestionar sus productos en tiempo real.
 * **Diseño Responsivo:** Completamente adaptado para visualizarse de forma óptima en computadoras, tablets y dispositivos móviles.
 * **Navegación Intuitiva:** Enlaces rápidos (incluyendo el acceso al inicio desde el logo principal) para facilitar la experiencia del usuario.
 
@@ -50,7 +50,7 @@ Antes de comenzar, se debe  contar con las siguientes herramientas instaladas:
 
 ## 🚀 Instalación y Ejecución
 
-Sigue estos pasos para clonar el proyecto y ejecutarlo en tu entorno local:
+Seguir estos pasos para clonar el proyecto y ejecutarlo en tu entorno pc:
 
 1. **Clonar el repositorio:** Abre tu terminal (Git Bash) y ejecuta el siguiente comando:
    ```bash
@@ -62,7 +62,7 @@ Sigue estos pasos para clonar el proyecto y ejecutarlo en tu entorno local:
 
 *Haz clic derecho sobre él y selecciona "Open with Live Server".
 
-*El proyecto se desplegará automáticamente en tu navegador predeterminado a través de un servidor local (normalmente en la dirección http://127.0.0.1:5500).
+*El proyecto se prodrá visualizar en tu navegador  a través de un servidor local (normalmente en la dirección http://127.0.0.1:5500).
 
 
 
